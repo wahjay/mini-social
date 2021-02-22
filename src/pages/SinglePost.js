@@ -73,7 +73,7 @@ function SinglePost(props) {
                     circular
                     floated='left'
                     size='mini'
-                    src='https://react.semantic-ui.com/images/avatar/large/christian.jpg'
+                    src='https://react.semantic-ui.com/images/avatar/large/matthew.png'
                     alt=""
                     style={{ width: '40px', height: '40px'}}
                   />
