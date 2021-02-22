@@ -174,7 +174,6 @@ function GifPicker({ close, selectGif, onSelectGif, callback }) {
     );
   }
   else if(search) {
-    console.log('resize!', width)
     const searchFn = (offset: number) => gf.search(search, { sort: 'relevant', offset, limit: 50 });
     gifpickerContent = (
       <div className="gifpicker-categories-wrapper">
