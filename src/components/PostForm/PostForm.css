@@ -1,0 +1,93 @@
+.post-form {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  display: flex;
+  padding: 10px 15px 10px 10px;
+  margin-bottom: 40px !important;
+  justify-content: center;
+
+  border-radius: 10px !important;
+  background: #e3edf7 !important;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.45) !important;
+  border: 1px solid rgba(0,0,0,0) !important;
+}
+
+.post-form .avatar {
+  margin-right: 10px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.post-form-field {
+  width: 100%;
+}
+
+.post-form-field textarea {
+  font-family: var(--font-fam);
+  resize: none !important;
+  font-size: 15px !important;
+  background: none !important;
+  border: none !important;
+}
+
+.textarea-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.textarea-helper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.textarea-icons {
+  position: relative;
+}
+
+.textarea-icons .MuiIconButton-root {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+
+.post-form-button {
+  letter-spacing: 1px;
+  font-size: 16px !important;
+  padding: 10px 20px !important;
+  border-radius: 20px !important;
+  background: #e3edf7 !important;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7) !important;
+  border: 1px solid rgba(0,0,0,0) !important;
+  transition: 0.1s ease-in !important;
+}
+
+.post-form-button:active {
+  opacity: 0.5 !important;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.2),
+              -0.5px -0.5px 0px rgba(255,255,255,0.2),
+              0px 0px 0px rgba(255,255,255,0.5),
+              0px 0px 10px -10px rgba(255,255,255,0.5) !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  transform: translateY(2px) !important;
+}
+
+.post-form-button:active span {
+  font-size: 13px;
+}
+
+.button-inactive {
+  opacity: 0.5 !important;
+}
+
+/* phone screen adjustment for post bar */
+@media (max-width: 550px) {
+  .post-form-button span{
+    font-size: 13px;
+  }
+}

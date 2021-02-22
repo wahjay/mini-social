@@ -1,38 +1,196 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=El+Messiri:wght@600&display=swap');
+
+.snackbar-button {
+  color: white;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease-out;
+  text-decoration: none;
+}
+
+.snackbar-button:hover {
+  color: white;
+  background-color: #5DAAEA;
+}
+
+#app-container {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 1000px;
+}
+
+#menubar {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg-color);
+}
+
+.home-column {
+  position: relative;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-column .loader-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* register and login form */
+.form-container {
+  width: 350px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  background: var(--bg-color);
+
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -2px rgba(255,255,255,0.8) !important;
+  border: 1px solid rgba(0,0,0,0) !important;
+}
+
+.form-container h1 {
+  font-family: 'El Messiri', 'Bebas Neue';
+  font-size: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container input {
+  font-size: 15px !important;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  padding: 10px 10px 10px 20px !important;
+  border-radius: 50px !important;
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.15),
+              inset -3px -3px 8px rgba(255,255,255,0.5) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container .ui.primary.button {
+  border-radius: 30px !important;
+  box-shadow: 3px 3px 8px #b1b1b1,
+              -3px -3px 8px #ffffff !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#switchform {
+  text-align: center;
+  margin-top: 10px;
+  height: 14px;
+}
+
+#switchform span:hover {
+  border-bottom: 1px solid #4E88CC;
+}
+
+/* post card starts */
+.postcard-width {
+  max-width: 550px;
+  width: 550px;
+}
+
+/* post card ends **/
+
+
+/* single post card style */
+.single-post-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px !important;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.postcard-container {
+  width: 600px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.single-post-card {
+  border-radius: 10px !important;
+  background: #e3edf7 !important;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -2px rgba(255,255,255,0.6) !important;
+  border: 1px solid rgba(0,0,0,0) !important;
+}
+
+.single-post-body {
+  padding: 0 10px 5px 10px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.single-post-images {
+  border-top: none !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  width: 100%;
+  display: grid;
+}
+
+.single-post-images div {
+  border-radius: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: inherit;
+  height: 300px;
+  max-height: 350px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.single-post-images div:last-child {
+  margin-bottom: 0;
+}
+
+/* single post style end */
+
+/* like, comment container */
+.buttons {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 771px) {
+  .postcard-width {
+    width: 500px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #app-container {
+    width: 100%;
+  }
+
+  .home-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .postcard-width {
+    width: 95%;
+  }
+}
+
+@media (max-width: 370px) {
+  .form-container {
+    width: 95%;
   }
 }

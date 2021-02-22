@@ -1,0 +1,75 @@
+.comment {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.comment:hover .comment-right {
+  visibility: visible;
+}
+
+.comment-avatar {
+  flex-shrink: 0;
+  margin-right: 7px;
+}
+
+.comment-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-content {
+  font-family: var(--font-fam);
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  padding: 2px 12px 5px 12px;
+}
+
+.comment-content > span {
+  font-weight: 700;
+}
+
+.comment-content > p {
+  display: inline-block;
+  font-size: 15px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+/*
+This will make sure emoji derive their width and height from the font-size of
+the text they're shown with. It also adds just a little bit of space before and
+after each emoji, and pulls them upwards a little bit for better optical alignment.
+*/
+img.emoji {
+   height: 1.3em;
+   width: 1.3em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+.comment-body > span {
+  font-size: 12px;
+}
+
+.comment-date {
+  display: flex;
+  height: 20px;
+}
+
+.comment-right {
+  visibility: hidden;
+  margin-left: 5px;
+}
+
+.comment-options {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: silver;
+}

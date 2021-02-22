@@ -1,0 +1,5 @@
+.createdAt:hover {
+  cursor: pointer;
+  color: gray !important;
+  border-bottom: 1px solid gray !important;
+}

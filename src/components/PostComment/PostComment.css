@@ -1,0 +1,82 @@
+.post-comment-container {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  display: flex;
+}
+
+.post-comment-avatar {
+  margin-top: 4px;
+  margin-right: 5px;
+  flex-basis: 0.2;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.post-comment-bar {
+  flex-basis: 0.8;
+  flex-shrink: 1;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.post-comment-input {
+  width: 100%;
+}
+
+.post-comment-input textarea {
+  width: 100%;
+  font-family: var(--font-fam);
+  font-size: 15px;
+  line-height: 1.3em;
+  border: none;
+  outline: none;
+  padding: 12px 12px 10px 15px;
+  resize: none !important;
+  background: none;
+}
+
+.post-comment-helper {
+  margin-left: 3px;
+  position: relative;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.post-comment-helper .MuiIconButton-root {
+  margin-right: 2px;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+}
+
+
+/* adjust post commnet input bar height for mobile devices */
+@media (max-width: 420px) and (min-width: 332px) {
+  .post-comment-bar[expand='0'] {
+    height: 40px;
+  }
+  .post-comment-avatar {
+    margin-top: 0;
+  }
+}
+
+
+/* these styles will be applied when expand attribute is set to 0 */
+@media (min-width: 331px) {
+  .post-comment-bar[expand='0'] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .post-comment-helper[expand='0'] .MuiIconButton-root:last-child {
+    display: none;
+  }
+}

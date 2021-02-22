@@ -1,0 +1,204 @@
+.post-card-body img.emoji {
+   height: 1.3em;
+   width: 1.3em;
+   margin: 0.2em .05em 0.2em .1em;
+   vertical-align: -0.1em;
+}
+
+.post-card {
+  margin-bottom: 20px !important;
+  border-radius: 10px !important;
+  background: var(--bg-color) !important;
+
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.55) !important;
+  border: 1px solid rgba(0,0,0,0) !important;
+}
+
+.post-card-body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+.post-see-more {
+  color: silver;
+}
+
+.post-see-more:hover {
+  color: silver;
+  border-bottom: 1px solid silver;
+}
+
+/*** postcard images layout starts ***/
+.post-card-images {
+  border-top: none !important;
+  padding: 0 5px !important;
+  width: 100%;
+  display: grid;
+  gap: 2px;
+  align-items: stretch;
+
+  /* four images layout be default */
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-areas:
+            "a a b b"
+            "a a b b"
+            "c c d d"
+            "c c d d";
+}
+
+.post-card-images div {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  max-height: 350px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post-card-images video {
+  width: auto;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  transform: scale(1.1);
+}
+
+.post-card-images .gif-tag {
+  user-select: none;
+  -webkit-user-select: none; 
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 30px;
+  height: 20px;
+  background: black;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  z-index: 5;
+  padding: 5px;
+  text-align: center;
+  line-height: 10px;
+}
+
+/* one image layout */
+.image-1 {
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "a";
+}
+
+/* two images layout */
+.image-2 {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+                "a b"
+                "a b";
+}
+
+/* three images layout */
+.image-3 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+                "a b"
+                "a c";
+}
+
+.post-card-images div:nth-child(1) {
+  grid-area: a;
+}
+
+.post-card-images div:nth-child(2) {
+  grid-area: b;
+}
+
+.post-card-images div:nth-child(3) {
+  grid-area: c;
+}
+
+.post-card-images div:nth-child(4) {
+  grid-area: d;
+}
+
+.image-1 div {
+  border-radius: 15px;
+}
+
+.image-2 div:nth-child(1) {
+  border-radius: 15px 0 0 15px;
+}
+
+.image-2 div:nth-child(2) {
+  border-radius: 0 15px 15px 0;
+  float: right;
+}
+
+.image-3 div:nth-child(1) {
+  border-radius: 15px 0 0 15px;
+}
+
+.image-3 div:nth-child(2) {
+  border-radius: 0 15px 0 0;
+  height: 150px;
+}
+
+.image-3 div:nth-child(3) {
+  border-radius: 0 0 15px 0;
+  height: 150px;
+}
+
+.image-4 div {
+  height: 150px;
+}
+
+.image-4 div:nth-child(1) {
+  border-radius: 15px 0 0 0;
+}
+
+.image-4 div:nth-child(2) {
+  border-radius: 0 15px 0 0;
+}
+
+.image-4 div:nth-child(3) {
+  border-radius: 0 0 0 15px;
+}
+
+.image-4 div:nth-child(4) {
+  border-radius: 0 0 15px 0;
+}
+/*** postcard images layout ends ***/
+
+
+.post-card-comment-section {
+  border-bottom: none !important;
+}
+
+.post-card-comment-section #comments-view-more, #comments-hide{
+  cursor: pointer;
+  height: 18px;
+  display: inline-block;
+  color: gray;
+}
+
+.post-card-comment-section #comments-view-more:hover, #comments-hide:hover {
+  border-bottom: 1px solid gray;
+}
+
+
+.post-card-comment-section .comment:last-child {
+  margin-bottom: 0;
+}
+
+.post-card-post-comment {
+  border-top: none !important;
+  padding-top: 0 !important;
+  padding-bottom: 8px !important;
+}

@@ -1,0 +1,135 @@
+.emoji-mart-anchors button {
+  cursor: pointer;
+}
+
+.emoji-mart-anchor-icon svg {
+  display: none;
+}
+
+/*.emoji-mart-anchors button:nth-child(1) */
+.emoji-mart-anchors button:nth-child(1):before {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/1f551.svg");
+}
+.emoji-mart-anchors button:nth-child(2):before {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/1f600.svg");
+}
+.emoji-mart-anchors button:nth-child(3):before {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/1f43b.svg");
+}
+.emoji-mart-anchors button:nth-child(4):before {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/1f354.svg");
+}
+.emoji-mart-anchors button:nth-child(5):before {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/26bd.svg");
+}
+.emoji-mart-anchors button:nth-child(6):before {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/1f698.svg");
+}
+.emoji-mart-anchors button:nth-child(7):before {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/1f4a1.svg");
+}
+.emoji-mart-anchors button:nth-child(8):before {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/1f523.svg");
+}
+.emoji-mart-anchors button:nth-child(9):before {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: transparent url("https://abs-0.twimg.com/emoji/v2/svg/1f6a9.svg");
+}
+
+.emoji-mart-anchor-selected:before{
+  -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%) !important;
+}
+
+.emoji-mart-anchors button:hover:before {
+  -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%) !important;
+}
+
+.emoji-mart-search input{
+  font-size: 14px !important;
+  border-radius: 25px !important;
+  background: var(--bg-color);
+}
+
+.emoji-mart-search-icon {
+  top: 10px;
+}
+
+.emoji-mart-category span {
+  font-weight: 600;
+  background: var(--bg-color);
+}
+
+.emoji-mart-scroll::-webkit-scrollbar-track{
+  background: var(--bg-color);
+  visibility: hidden;
+}
+
+.emoji-mart-emoji {
+  outline:none;
+}
+
+.emoji-mart-emoji:active {
+  transform: scale(1.1);
+}
